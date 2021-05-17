@@ -1,0 +1,74 @@
+<<<<<<< HEAD
+<div class="container">
+    <h1>User Management System</h1>
+    <hr>
+    <h2>Please Update the User Details </h2>
+    {{#if alert}}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{alert}}
+    </div>
+    {{/if}}
+    {{#each rows}}
+    <form class="row g-3 needs-validation" method="POST" action="/edituser/{{this.id}}" novalidate>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.name}}"
+                    placeholder="Name" name="name">
+                <label for="floatingInput">Name</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.email}}"
+                    placeholder="User Email" name="email">
+                <label for="floatingInput">Email</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.contact}}"
+                    placeholder="User Contact" name="contact">
+                <label for="floatingInput">Contact</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info col-2">Update User</button>
+    </form>
+    {{/each}}
+=======
+<div class="container">
+    <h1>User Management System</h1>
+    <hr>
+    <h2>Please Update the User Details </h2>
+    {{#if alert}}
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{alert}}
+    </div>
+    {{/if}}
+    {{#each rows}}
+    <form class="row g-3 needs-validation" method="POST" action="/edituser/{{this.id}}" novalidate>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.name}}"
+                    placeholder="Name" name="name">
+                <label for="floatingInput">Name</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.email}}"
+                    placeholder="User Email" name="email">
+                <label for="floatingInput">Email</label>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" value="{{this.contact}}"
+                    placeholder="User Contact" name="contact">
+                <label for="floatingInput">Contact</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info col-2">Update User</button>
+    </form>
+    {{/each}}
+>>>>>>> 530654bee35f80307285cfec45806df05c06a49d
+</div>
